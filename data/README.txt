@@ -1,46 +1,59 @@
---------
-Overview 
---------
+------------------------------------
+Smarthome Crowd Requirements Dataset
+------------------------------------
 
-This data was collected as part of research on understanding the influence of personality and creativity potential in Crowd RE. Results based on the analysis are published in--
+This data was collected as part of research on understanding the influence of personality and creativity potential in Crowd RE. Results based on the analysis are published in:
 
-[1] Pradeep K. Murukannaiah, Nirav Ajmeri, and Munindar P. Singh. Acquiring Creative Requirements from the Crowd: Understanding the Influences of Personality and Creative Potential in Crowd RE. Proceedings of the IEEE 24th International Requirements Engineering Conference (RE), Beijing, September 2016, pages 1–10.
+[1] Pradeep K. Murukannaiah, Nirav Ajmeri, and Munindar P. Singh. Acquiring Creative Requirements from the Crowd: Understanding the Influences of Personality and Creative Potential in Crowd RE. Proceedings of the IEEE 24th International Requirements Engineering Conference (RE), Beijing, September 2016, pages 176–185.
 
-This dataset comprises the users' personality profiles and creativity attitudes, requirements identified by them, and ratings of the requirements. 
+Bib: 
+@inproceedings{Murukannaiah-RE16-Creativity,
+  author = {Pradeep K. Murukannaiah and Nirav Ajmeri and Munindar P. Singh},
+  title = {Acquiring Creative Requirements from the Crowd:
+    Understanding the Influences of Individual Personality and
+    Creative Potential in Crowd {RE}},
+  booktitle = {Proceedings of the 20th IEEE International Requirements
+    Engineering Conference (RE)},
+  publisher = {IEEE Computer Society},
+  address = {Beijing},
+  pages = {176--185},
+  month = sep,
+  year = 2016
+}
+
+This dataset comprises of the crowd workers' personality profiles and creative potential, requirements identified by them, and creativity ratings of those requirements. 
+
 
 -------
 License
 -------
 Use of this dataset in publications must be acknowledged by referencing the publication [1]. 
 
-We would also appreciate if you could drop us an email informing of any publication using this dataset. We would be glad to list any publications that result from the use of this dataset, on our webpage.
+We would also appreciate if you could drop us an email (pkmvse@rit.edu) informing of any publication using this dataset. We would be glad to list any publications that result from the use of this dataset, on our webpage.
 
 
 ---------------
-Data Dictionary
+List of tables
 ---------------
 
--Common for both phases-
+1. Presurvey_questions: List of presurvey questions to collect demographics
 
-1. Presurvey_questions: List of presurvey questions to collect demographics. 
-2. Personality_questions: List of personality questions to gauge users personality attitude. 
-3. Creativity_questions: List of creativity questions to determine users' creativity potential. 
-4. Postsurvey_questions: List of postsurvey questions. 
+2. Personality_questions: List of personality questions to gauge a crowd worker's personality attitude
 
--Phase 1-
-5. Phase1_users: List of users in phase 1 of the study. 
-6. Phase1-presurvey_questions_users: User responses to the presurvey questions.
-7. Phase1-personality_questions_users: User responses to the personality questionnaire. 
-8. Phase1-creativity_questions_users: User responses to the creativity questionnaire.
-9. Phase1-postsurvey_quetions_users: User responses to the postsurvey questions.
-10. Phase1-requirements: User elicited requirements in a user story format. 
-11. Phase1-requirements_ratings: User ratings for the user elicited requirements.
+3. Creativity_questions: List of creativity questions to determine a crowd worker's creativity potential 
 
--Phase 2-
-12. Phase2_users: List of users in phase 2 of the study. 
-13. Phase2-presurvey_questions_users: User responses to the presurvey questions.
-14. Phase2-personality_questions_users: User responses to the personality questionnaire. 
-15. Phase2-creativity_questions_users: User responses to the creativity questionnaire. 
-16. Phase2-postsurvey_quetions_users: User responses to the postsurvey questions.
-17. Phase2-requirements: User elicited requirements in a user story format. 
-18. Phase2-requirements_ratings: User ratings for the user elicited requirements 
+4. Postsurvey_questions: List of postsurvey questions
+
+5. Users: List of crowd workers in phase 1 of the study; values 1, 2, 3, and 10 of the column 'created_phase' correspond to workers in phase1- stage1, phase1-stage2, phase1-stage3, and phase2, respectively 
+
+6. Presurvey_questions_users: Workers' responses to the presurvey
+
+7. Personality_questions_users: Workers' responses to the personality questionnaire
+
+8. Creativity_questions_users: Workers' responses to the creativity questionnaire
+
+9. Postsurvey_quetions_users: Workers' responses to the postsurvey
+
+10. Requirements: Requirements in a user story format, elicited by the crowd workers
+
+11. Requirements_ratings: Ratings for the requirements
